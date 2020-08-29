@@ -89,6 +89,9 @@ i {
   color: #fff;
   background-color: #ccc;
 }
+#login-center > main > .login-main > div > form > div > label > span {
+  font-size: 20px;
+}
 #login-center > main > .login-main > div > form > div > input {
   padding-left: 50px;
   width: 300px;

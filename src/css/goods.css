@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+#main #head-login {
+  width: 100%;
+  height: 26px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
+}
+#main #head-login > header {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#main #head-login > header > p {
+  height: 100%;
+}
+#main #head-login > header > p > span {
+  color: red;
+}
+#main #head-login > header > p > i {
+  line-height: 26px;
+  font-size: 12px;
+  color: #999;
+  padding-right: 15px;
+}
+#main #head-login > header > p > a {
+  padding-right: 15px;
+}
+#main #head-login > header > ul {
+  height: 26px;
+}
+#main #head-login > header > ul > li {
+  float: left;
+  line-height: 26px;
+  font-size: 12px;
+  color: #999;
+}
+#main #head-login > header > ul > li > a {
+  padding: 0 10px;
+}
+#main #head-login > header > ul > li .iconfont {
+  line-height: 26px;
+  font-size: 12px;
+  color: red;
+}
+#main #head-login > header > ul > li .icon-xiajiantoushixinxiao {
+  color: #999;
+}
+#main #head-login > header a {
+  line-height: 26px;
+  font-size: 12px;
+  color: #999;
+}
+#main #head-login > header a:hover {
+  color: red;
+}
+#main #head-bottom {
+  width: 100%;
+  border-bottom: 1px solid #c8baaa;
+  background: #fff;
+}
+#main #head-bottom > main {
+  width: 1190px;
+  height: 85px;
+  margin: 0 auto;
+  display: flex;
+}
+#main #head-bottom > main > h1 {
+  display: block;
+  float: left;
+  height: 85px;
+  line-height: 85px;
+}
+#main #head-bottom > main > h1 > a {
+  width: 145px;
+  height: 30px;
+  font-size: 22px;
+}
+#main #head-bottom > main > h1 > a > img {
+  width: 150px;
+}
+#main #head-bottom > main > .shop {
+  width: 700px;
+  float: left;
+  height: 85px;
+  padding-top: 22px;
+}
+#main #head-bottom > main > .shop > .shop-left {
+  width: 149px;
+  float: left;
+  padding: 0 10px;
+  height: 40px;
+  border-left: 1px solid #f0f0f0;
+}
+#main #head-bottom > main > .shop > .shop-left > a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+#main #head-bottom > main > .shop > .shop-center {
+  float: left;
+  width: 153px;
+  height: 40px;
+  font-weight: 400;
+  padding: 0 10px;
+  border-left: 1px dotted #f0f0f0;
+}
+#main #head-bottom > main > .shop > .shop-center > ul > li {
+  font-size: 12px;
+  float: left;
+  color: red;
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+#main #head-bottom > main > .shop > .shop-center > ul > li > p {
+  display: inline-block;
+  color: #999;
+}
+#main #head-bottom > main > .head-bottom-left {
+  float: right;
+  width: 100%;
+  height: 85px;
+}
+#main #head-bottom > main > .head-bottom-left > form {
+  float: right;
+  margin-top: 23px;
+  width: 458px;
+  height: 36px;
+  border: solid #FF0036;
+  border-width: 2px 0px 2px 2px;
+}
+#main #head-bottom > main > .head-bottom-left > form > fieldset {
+  border: none;
+  width: 458px;
+  height: 36px;
+}
+#main #head-bottom > main > .head-bottom-left > form > fieldset > input {
+  color: #999;
+  font-size: 12px;
+  width: 376px;
+  height: 32px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding: 5px 3px 5px 5px;
+  border: none;
+  float: left;
+  outline: none;
+}
+#main #head-bottom > main > .head-bottom-left > form > fieldset > button {
+  width: 80px;
+  height: 32px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background: #FF0036;
+  float: left;
+}
+#main #head-bottom > main > .head-bottom-left > div {
+  margin: 23px 0 0 3px;
+  height: 36px;
+  float: right;
+}
+#main #head-bottom > main > .head-bottom-left > div > button {
+  width: 80px;
+  height: 36px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background: #000;
+  float: left;
+}
+#main #goods {
+  width: 1190px;
+  margin: 0 auto;
+}
+#main #goods > .goods-title {
+  background: lightblue;
+  height: 150px;
+}
+#main #goods > .goods-main {
+  background: lightcoral;
+}
+#main #goods > .goods-main > .goods-main-left {
+  background: lightgoldenrodyellow;
+  width: 990px;
+  height: 673px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-left {
+  background: lightgreen;
+  float: left;
+  width: 460px;
+  height: 604px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-left > .loupe-left-top {
+  background: lightpink;
+  position: relative;
+  width: 420px;
+  height: 420px;
+  margin: 20px auto 0;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-left > .loupe-left-bottom {
+  width: 460px;
+  height: 82px;
+  background: lightseagreen;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-left > p {
+  margin-top: 38px;
+  font-size: 12px;
+  padding: 0 40px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right {
+  float: left;
+  width: 530px;
+  height: 100%;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-title {
+  background: lightslategrey;
+  width: 510px;
+  height: 40px;
+  margin: 20px 10px 12px;
+  overflow: hidden;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-title > h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-title > p {
+  font-size: 14px;
+  color: #FF0036;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-top {
+  background: lime;
+  width: 510px;
+  height: 150px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-top > .loupe-right-banner {
+  height: 50px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-top > .loupe-right-panel {
+  height: 100px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-top > .loupe-right-panel > dl dt {
+  color: #999;
+  font-size: 12px;
+  text-align: left;
+  float: left;
+  width: 69px;
+  margin: 0 0 0 8px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-top > .loupe-right-panel > dl dd {
+  color: #333;
+  margin-left: 70px;
+}
+#main #goods > .goods-main > .goods-main-left > .loupe-right > .loupe-right-top > .loupe-right-panel > dl dd > span {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+#main #footer {
+  width: 100%;
+  height: 550px;
+  border-top: 1px solid #D1D7DC;
+  background: #fff;
+}
+#main #footer > .footer-top {
+  width: 1190px;
+  height: 100px;
+  background: url(../images/121.jpg) no-repeat;
+  margin: 0px auto;
+  margin-top: 25px;
+}
+#main #footer > .footer-center {
+  width: 1190px;
+  padding-top: 22px;
+  height: 210px;
+  margin: auto;
+  border-top: 1px solid #ededed;
+  background: url(../images/0000.jpg) 45px bottom no-repeat;
+}
+#main #footer > .footer-center > dl {
+  float: left;
+  width: 238px;
+  padding-left: 52px;
+}
+#main #footer > .footer-center > dl > dt {
+  color: #646464;
+  font-size: 16px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+#main #footer > .footer-center > dl > dd {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+#main #footer > .footer-center > dl > dd > a {
+  font-size: 12px;
+  width: 100px;
+  overflow: hidden;
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+  color: #8b8b8b;
+}
+#main #footer > .footer-center > dl > a {
+  display: block;
+  width: 105px;
+  height: 105px;
+  line-height: 105px;
+  text-align: center;
+}
+#main #footer > .footer-center > dl > a > img {
+  width: 105px;
+  height: 105px;
+}
+#main #footer > .footer-bottom {
+  height: 250px;
+  border-top: 2px solid #FF0036;
+  background: #000;
+  text-align: left;
+}
+#main #footer > .footer-bottom > .footer-bottom-main {
+  width: 1190px;
+  margin: 0 auto;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > li {
+  line-height: 25px;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 12px;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > li > a {
+  color: #fff;
+  font-size: 12px;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > div {
+  line-height: 20px;
+  background: #000;
+  color: #a4a4a4;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > div > span {
+  display: inline-block;
+  text-align: left;
+  margin-right: 65px;
+  line-height: 20px;
+  color: #a4a4a4;
+  font-size: 12px;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > ol {
+  margin-top: 5px;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > ol > li {
+  line-height: 20px;
+  background: #000;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > ol > li > span {
+  margin-right: 65px;
+  color: #a4a4a4;
+  font-size: 12px;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > ol > li > i {
+  color: #686868;
+  font-size: 12px;
+}
+#main #footer > .footer-bottom > .footer-bottom-main > ol > li > img {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 30px;
+}

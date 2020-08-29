@@ -20,6 +20,27 @@
       "unicode_decimal": 58932
     },
     {
+      "icon_id": "485763",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "688122",
+      "name": "旺旺",
+      "font_class": "wangwang",
+      "unicode": "e79f",
+      "unicode_decimal": 59295
+    },
+    {
+      "icon_id": "705665",
+      "name": "房子",
+      "font_class": "fangzi",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
       "icon_id": "750904",
       "name": "母婴",
       "font_class": "muying",
@@ -44,8 +65,8 @@
       "icon_id": "856958",
       "name": "手机",
       "font_class": "phone",
-      "unicode": "e60f",
-      "unicode_decimal": 58895
+      "unicode": "e611",
+      "unicode_decimal": 58897
     },
     {
       "icon_id": "1079511",
@@ -146,11 +167,32 @@
       "unicode_decimal": 58898
     },
     {
+      "icon_id": "8348168",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e725",
+      "unicode_decimal": 59173
+    },
+    {
+      "icon_id": "8922346",
+      "name": "锁",
+      "font_class": "suo",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
       "icon_id": "11495071",
       "name": "钻石",
       "font_class": "zuanshi",
       "unicode": "e66f",
       "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "14666052",
+      "name": "上箭头",
+      "font_class": "shangjiantou",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
     }
   ]
 }
