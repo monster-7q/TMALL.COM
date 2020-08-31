@@ -137,7 +137,7 @@ html,body{
                 float: left;
                 margin-left: -25px;
                 >img{
-                    width: 240px;
+                    // width: 240px;
                     height: 130px;;
                 }
             }
@@ -219,9 +219,10 @@ html,body{
                 float: left;
                 width: 1030px;
                 height: 36px;
-                display: flex;
                 >a{
-                    margin: 0 8px;
+                    display: block;
+                    padding: 0 8px;
+                    height: 36px;
                     float: left;
                     color: #000;
                     line-height:36px;
@@ -230,37 +231,75 @@ html,body{
                     }
                     >img{
                         margin-top: 3px;
-                        width: 100px;
                         height: 30px;
-                        display: block;
                     }
+                }
+                >.imgactive{
+                    height: 36px;
+                    width: 116px;
+                    text-align:center
+
                 }
             }
             // 列表
             >#content-list{
-                width: 200px;
-                position: absolute;
-                top: 39px;
-                left: 0px;
-                background-color: rgba(0,0,0,.55);
-                >li{
-                    padding-left: 15px;
-                    height: 500/16px;
-                    line-height: 500/16px;
-                    color: #fff;
-                    font-size: 14px;
-                    >.iconfont{
-                        font-size: 16px;
-                        opacity: .6;
-                        padding-right: 2px;
-                    }
-                    >a{
+                >ul{
+                    width: 200px;
+                    position: absolute;
+                    top: 39px;
+                    left: 0px;
+                    background-color: rgba(0,0,0,.55);
+                    z-index: 99;
+                    >li{
+                        padding-left: 15px;
+                        height: 500/16px;
+                        line-height: 500/16px;
                         color: #fff;
+                        font-size: 14px;
+                        >.iconfont{
+                            font-size: 16px;
+                            opacity: .6;
+                            padding-right: 2px;
+                        }
+                        >a{
+                            color: #fff;
+                        }
                     }
+                    >li:hover{
+                        background-color: #fff;
+                        color: red;
+                        >a{
+                            font-weight: 700;
+                            color: red;
+                        }
+                    }
+                }
+                >ol{
+                    height: 500px;
+                    width: 852px;
+                    left: 200px;
+                    position: absolute;
+                    display: none;
+                    top:39px;
+                    background-color: #fff;
+                    color: #000;
+                    >li{
+                        padding: 20px;
+                        display: none;
+                        >a{
+                            color: aqua;
+                            font-size: 16px;
+                        }
+                    }
+                    >.cartlist-active{
+                        display: block;
+                    }
+
                 }
             }
         }
     }
+
     //轮播图
     #content-banner{
         width: 100%;
@@ -268,14 +307,15 @@ html,body{
             width: 100%;
             height: 500px;
             background: blue;
-            >.tmall-banner{
+            >ul{
                 height: 500px;
                 width: 1230px;
                 margin: 0 auto;
-                background: lightgreen;
-                >img{
-                    margin: 0 auto;
+                >li{
                     display: none;
+                    >img{
+                        float: left;
+                    }
                 }
                 >.active{
                     display: block;
@@ -330,7 +370,7 @@ html,body{
                         }
                         >i{
                         color: #666;
-                    }
+                        }
                     }
                 }
                 >a{
@@ -360,31 +400,71 @@ html,body{
         }
         // 合作
         >#content-cooperate{
-            margin-top: 15px;
+            margin-top: 40px;
             width: 100%;
-            >div{
+            >ul{
                 display: flex;
                 flex-wrap: wrap;
                 position: relative;
-                >a{
+                >li{
                     width: 122px;
                     height: 108px;
                     margin-right: 1px;
                     margin-bottom: 1px;
                     float: left;
-                    background: #fff;
-                    display: flex;
-                    >img{
-                        margin: auto;
-                        height: 50px;
-                        object-fit: cover;
+                    position: relative;
+                    background-color: #fff;
+                    >a{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                        background-color: rgba(0,0,0,.8);
+                        transition: all .3s ease-out;
+                        opacity: 0;
+                        >div:first-of-type{
+                            color: #fff;
+                            text-align: center;
+                            line-height: 90px;
+                            height: 60px;
+                        }
+                        >div:last-of-type{
+                            text-align: center;
+                            height: 32px;
+                            >span{
+                                display: inline-block;
+                                color: #fff;
+                                width: 63px;
+                                height: 18px;
+                                font-size: 12px;
+                                line-height: 15px;
+                                background-color: #FF0036;
+                                border-radius: 9px;
+                            }
+                        }
+                    }
+                    >a:hover{
+                        opacity:1;
+                    }
+                    >div{
+                        width: 122px;
+                        height: 108px;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        >img{
+                            margin: auto;
+                            // width: 82%;
+                            height: 50px;
+                        }
                     }
                 }
                 >div{
                     position: absolute;
                     bottom: 0px;
                     right: 0px;
-
                     >a{
                         color: #999;
                         display: block;
@@ -402,7 +482,7 @@ html,body{
         }
         // 超市
         >#content-supermarket{
-            margin-top: 30px;
+            margin-top: 20px;
             width: 100%;
             >.supermarket-top{
                 font-size: 18px;
@@ -421,12 +501,20 @@ html,body{
                     height: 618px;
                     float: left;
                     >a{
+                        opacity:0;
                         >img{
                             display: block;
                             width: 100%;
                             height: 618px;
+                            opacity: 1;
+                        }
+                        &:hover{
+                            >img{
+                                opacity: 0.6;
+                            }
                         }
                     }
+
                 }
                 >.supermarket-bottom-right{
                     width: 995px;
@@ -514,6 +602,11 @@ html,body{
                             width: 235px;
                             height: 301px;
                             float: left;
+                        }
+                        &:hover{
+                            >img{
+                                opacity: 0.6;
+                            }
                         }
                     }
                 }

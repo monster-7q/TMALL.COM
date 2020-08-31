@@ -7,6 +7,8 @@
     <title>天猫tmall.com--理想生活上天猫</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../font/iconfont.css">
+    <script src="../js/index.js" type="module"></script>
+    <!-- <script src="../js/index.js" type="module"></script> -->
 </head>
 
 <body>
@@ -77,10 +79,10 @@
                     <span class="iconfont icon-liebiao"></span> 商品分类
                 </div>
                 <div class="tmall-rigth">
-                    <a href="">
+                    <a href="" class="imgactive">
                         <img src="../images/12123.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="" class="imgactive">
                         <img src="../images/1212.png" alt="">
                     </a>
                     <a href="">天猫会员</a>
@@ -93,121 +95,139 @@
                     <a href="">苏宁易购</a>
                 </div>
                 <!-- 列表 -->
-                <ul id="content-list">
-                    <li>
-                        <span class="iconfont icon-icon-"></span>
-                        <a href="">女装</a>
-                        <span>/</span>
-                        <a href="">内衣</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-yifu"></span>
-                        <a href="">男装</a>
-                        <span>/</span>
-                        <a href="">运动户外</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-xiezi"></span>
-                        <a href="">女鞋</a>
-                        <span>/</span>
-                        <a href="">男鞋</a>
-                        <span>/</span>
-                        <a href="">箱包</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-kouhong"></span>
-                        <a href="">美妆</a>
-                        <span>/</span>
-                        <a href="">个人护理</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-zuanshi"></span>
-                        <a href="">腕表</a>
-                        <span>/</span>
-                        <a href="">眼镜</a>
-                        <span>/</span>
-                        <a href="">珠宝饰品</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-phone"></span>
-                        <a href="">手机</a>
-                        <span>/</span>
-                        <a href="">数码</a>
-                        <span>/</span>
-                        <a href="">电脑办公</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-muying"></span>
-                        <a href="">母婴玩具</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-canyinicon-"></span>
-                        <a href="">零食</a>
-                        <span>/</span>
-                        <a href="">茶酒</a>
-                        <span>/</span>
-                        <a href="">进口食品</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-yingtao"></span>
-                        <a href="">生鲜水果</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-dianqi01"></span>
-                        <a href="">大家电</a>
-                        <span>/</span>
-                        <a href="">生活电器</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-shafa"></span>
-                        <a href="">家具建材</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-qiche"></span>
-                        <a href="">汽车</a>
-                        <span>/</span>
-                        <a href="">配件</a>
-                        <span>/</span>
-                        <a href="">用品</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-jiaju"></span>
-                        <a href="">家纺</a>
-                        <span>/</span>
-                        <a href="">家饰</a>
-                        <span>/</span>
-                        <a href="">鲜花</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-yiliao"></span>
-                        <a href="">医药保健</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-chuju"></span>
-                        <a href="">厨具</a>
-                        <span>/</span>
-                        <a href="">收纳</a>
-                        <span>/</span>
-                        <a href="">宠物</a>
-                    </li>
-                    <li>
-                        <span class="iconfont icon-tushu"></span>
-                        <a href="">图书音像</a>
-                    </li>
-                </ul>
+                <div id="content-list">
+                    <ul>
+                        <li>
+                            <span class="iconfont icon-icon-"></span>
+                            <a href="">女装</a>
+                            <span>/</span>
+                            <a href="">内衣</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-yifu"></span>
+                            <a href="">男装</a>
+                            <span>/</span>
+                            <a href="">运动户外</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-xiezi"></span>
+                            <a href="">女鞋</a>
+                            <span>/</span>
+                            <a href="">男鞋</a>
+                            <span>/</span>
+                            <a href="">箱包</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-kouhong"></span>
+                            <a href="">美妆</a>
+                            <span>/</span>
+                            <a href="">个人护理</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-zuanshi"></span>
+                            <a href="">腕表</a>
+                            <span>/</span>
+                            <a href="">眼镜</a>
+                            <span>/</span>
+                            <a href="">珠宝饰品</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-phone"></span>
+                            <a href="">手机</a>
+                            <span>/</span>
+                            <a href="">数码</a>
+                            <span>/</span>
+                            <a href="">电脑办公</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-muying"></span>
+                            <a href="">母婴玩具</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-canyinicon-"></span>
+                            <a href="">零食</a>
+                            <span>/</span>
+                            <a href="">茶酒</a>
+                            <span>/</span>
+                            <a href="">进口食品</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-yingtao"></span>
+                            <a href="">生鲜水果</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-dianqi01"></span>
+                            <a href="">大家电</a>
+                            <span>/</span>
+                            <a href="">生活电器</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-shafa"></span>
+                            <a href="">家具建材</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-qiche"></span>
+                            <a href="">汽车</a>
+                            <span>/</span>
+                            <a href="">配件</a>
+                            <span>/</span>
+                            <a href="">用品</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-jiaju"></span>
+                            <a href="">家纺</a>
+                            <span>/</span>
+                            <a href="">家饰</a>
+                            <span>/</span>
+                            <a href="">鲜花</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-yiliao"></span>
+                            <a href="">医药保健</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-chuju"></span>
+                            <a href="">厨具</a>
+                            <span>/</span>
+                            <a href="">收纳</a>
+                            <span>/</span>
+                            <a href="">宠物</a>
+                        </li>
+                        <li>
+                            <span class="iconfont icon-tushu"></span>
+                            <a href="">图书音像</a>
+                        </li>
+                    </ul>
+                    <ol id="cartlist">
+                        <li class="cartlist-active">
+                            <a href="http://localhost/W./list.html">跳转到商品页</a>
+                        </li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                        <li>内容模块2</li>
+                    </ol>
+                </div>
+
             </nav>
         </div>
         <!-- 轮播图 -->
         <div id="content-banner">
             <main>
-                <div class="tmall-banner">
-                    <img src="../images/O1CN01XFwob21CCC2rcV09V_!!44-0-luban.jpg" alt="" class="active">
-                    <img src="../images/O1CN01yYj6L02JcwfKa5Tjf_!!1819443-0-lubanu.jpg_q100.jpg" alt="">
-                    <img src="../images/TB1_1OLxQL0gK0jSZFtXXXQCXXa-1130-500.jpg_q100.jpg" alt="">
-                    <img src="../images/TB1dbGxbOpE_u4jSZKbSuvCUVXa.jpg" alt="">
-                    <img src="../images/TB1DO9wwYj1gK0jSZFOSuw7GpXa.jpg" alt="">
-                    <img src="../images/TB1JHaaSNv1gK0jSZFFSuv0sXXa.jpg" alt="">
-                </div>
+                <ul class="tmall-banner">
+                    <li class="active"><img class="lazy active" data-original="../images/O1CN01XFwob21CCC2rcV09V_!!44-0-luban.jpg" alt=""></li>
+                    <li><img class="lazy" data-original="../images/O1CN01yYj6L02JcwfKa5Tjf_!!1819443-0-lubanu.jpg_q100.jpg" alt=""></li>
+                    <li><img class="lazy" data-original="../images/TB1_1OLxQL0gK0jSZFtXXXQCXXa-1130-500.jpg_q100.jpg" alt=""></li>
+                    <li><img class="lazy" data-original="../images/TB1dbGxbOpE_u4jSZKbSuvCUVXa.jpg" alt=""></li>
+                    <li><img class="lazy" data-original="../images/TB1DO9wwYj1gK0jSZFOSuw7GpXa.jpg" alt=""></li>
+                    <li><img class="lazy" data-original="../images/TB1JHaaSNv1gK0jSZFFSuv0sXXa.jpg" alt=""></li>
+                </ul>
                 <ol>
                     <li></li>
                     <li></li>
@@ -231,7 +251,7 @@
                         </a>
                     </div>
                     <a href="">
-                        <img src="../images/TB17qddaOERMeJjSspiSuvZLFXa.jpg_300x1000q100.jpg" alt="">
+                        <img class="lazy" data-original="../images/TB17qddaOERMeJjSspiSuvZLFXa.jpg_300x1000q100.jpg" alt="">
                     </a>
                 </div>
                 <div class="brand-center">
@@ -244,7 +264,7 @@
                         </a>
                     </div>
                     <a href="">
-                        <img src="../images/TB1fbhiawoQMeJjy0FnSuv8gFXa.jpg_460x460q100.jpg" alt="">
+                        <img class="lazy" data-original="../images/TB1fbhiawoQMeJjy0FnSuv8gFXa.jpg_460x460q100.jpg" alt="">
                     </a>
                 </div>
                 <div class="brand-right">
@@ -257,91 +277,397 @@
                         </a>
                     </div>
                     <a href="">
-                        <img src="../images/TB1_6zjcQ9l0K4jSZFKSutFjpXa.jpg_460x460q100.jpg" alt="">
+                        <img class="lazy" data-original="../images/TB1_6zjcQ9l0K4jSZFKSutFjpXa.jpg_460x460q100.jpg" alt="">
                     </a>
                 </div>
             </div>
             <!-- 合作 -->
             <div id="content-cooperate">
-                <div>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
-                    </a>
+                <ul>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1vDvUKpXXXXaKXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="brand-img">
+                            <img class="lazy" data-original="../images/TB1QGlkSVXXXXcLXpXXXXXXXXXX.png" alt="">
+                        </div>
+                        <a href="javascript:;" class="brand-mask">
+                            <div>
+                                <span>优惠券 ￥50</span>
+                            </div>
+                            <div>
+                                <span>点击进入</span>
+                            </div>
+                        </a>
+                    </li>
                     <div>
                         <a href="">
-                            换一批
-                        </a>
+                        换一批
+                    </a>
                     </div>
-                </div>
+                </ul>
+
             </div>
             <!-- 超市 -->
             <div id="content-supermarket">
@@ -351,7 +677,7 @@
                 <div class="supermarket-bottom">
                     <div class="supermarket-bottom-left">
                         <a href="">
-                            <img src="../images/1236.jpg" alt="">
+                            <img class="lazy" data-original="../images/1236.jpg" alt="">
                             <div></div>
                             <div></div>
                         </a>
@@ -372,49 +698,49 @@
                         </div>
                         <a href="">
                             <div>
-                                <img src="../images/0.jpg" alt="">
+                                <img class="lazy" data-original="../images/0.jpg" alt="">
                                 <h5>innisfree/悦诗风吟橄榄油泡沫洁面乳150ml温和清洁 水润滋养</h5>
                                 <p>￥55</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/0.jpg" alt="">
+                                <img class="lazy" data-original="../images/0.jpg" alt="">
                                 <h5>innisfree/悦诗风吟橄榄油泡沫洁面乳150ml温和清洁 水润滋养</h5>
                                 <p>￥55</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/0.jpg" alt="">
+                                <img class="lazy" data-original="../images/0.jpg" alt="">
                                 <h5>innisfree/悦诗风吟橄榄油泡沫洁面乳150ml温和清洁 水润滋养</h5>
                                 <p>￥55</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/0.jpg" alt="">
+                                <img class="lazy" data-original="../images/0.jpg" alt="">
                                 <h5>innisfree/悦诗风吟橄榄油泡沫洁面乳150ml温和清洁 水润滋养</h5>
                                 <p>￥55</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/0.jpg" alt="">
+                                <img class="lazy" data-original="../images/0.jpg" alt="">
                                 <h5>innisfree/悦诗风吟橄榄油泡沫洁面乳150ml温和清洁 水润滋养</h5>
                                 <p>￥55</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/0.jpg" alt="">
+                                <img class="lazy" data-original="../images/0.jpg" alt="">
                                 <h5>innisfree/悦诗风吟橄榄油泡沫洁面乳150ml温和清洁 水润滋养</h5>
                                 <p>￥55</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/0.jpg" alt="">
+                                <img class="lazy" data-original="../images/0.jpg" alt="">
                                 <h5>innisfree/悦诗风吟橄榄油泡沫洁面乳150ml温和清洁 水润滋养</h5>
                                 <p>￥55</p>
                             </div>
@@ -425,17 +751,17 @@
             <!-- 国际 -->
             <div id="content-iso">
                 <div class="iso-top">
-                    <img src="../images/123123.png" alt="">
+                    <img class="lazy" data-original="../images/123123.png" alt="">
                 </div>
                 <div class="iso-bottom">
                     <div class="iso-bottom-left">
                         <a href="">
-                            <img src="../images/TB1UzOqoWL7gK0jSZFBXXXZZpXa-468-602.jpg" alt="">
+                            <img class="lazy" data-original="../images/TB1UzOqoWL7gK0jSZFBXXXZZpXa-468-602.jpg" alt="">
                             <div></div>
                             <div></div>
                         </a>
                         <a href="">
-                            <img src="../images/TB1nXx9oQP2gK0jSZPxXXacQpXa-468-602.jpg" alt="">
+                            <img class="lazy" data-original="../images/TB1nXx9oQP2gK0jSZPxXXacQpXa-468-602.jpg" alt="">
                             <div></div>
                             <div></div>
                         </a>
@@ -443,56 +769,56 @@
                     <div class="iso-bottom-right">
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
                         </a>
                         <a href="">
                             <div>
-                                <img src="../images/01.jpg" alt="">
+                                <img class="lazy" data-original="../images/01.jpg" alt="">
                                 <h5>ZEROWATER美国进口家用直饮滤水壶过滤净水壶杯器去垢滤芯1壶1芯</h5>
                                 <p>￥329</p>
                             </div>
@@ -503,7 +829,7 @@
             <!-- 横幅 -->
             <div id="conten-advertising">
                 <a href="">
-                    <img src="../images/1111.jpg" alt="">
+                    <img class="lazy" data-original="../images/1111.jpg" alt="">
                 </a>
             </div>
             <!-- 猜你喜欢 -->
@@ -516,7 +842,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/02.jpg" alt="">
+                                    <img class="lazy" data-original="../images/02.jpg" alt="">
                                     <h5>维达手帕纸超韧4层8张18包卫生纸巾 自然无香面巾纸 新旧交替发货</h5>
                                     <p>￥329</p>
                                 </div>
@@ -525,7 +851,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/02.jpg" alt="">
+                                    <img class="lazy" data-original="../images/02.jpg" alt="">
                                     <h5>维达手帕纸超韧4层8张18包卫生纸巾 自然无香面巾纸 新旧交替发货</h5>
                                     <p>￥329</p>
                                 </div>
@@ -534,7 +860,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/02.jpg" alt="">
+                                    <img class="lazy" data-original="../images/02.jpg" alt="">
                                     <h5>维达手帕纸超韧4层8张18包卫生纸巾 自然无香面巾纸 新旧交替发货</h5>
                                     <p>￥329</p>
                                 </div>
@@ -543,7 +869,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/02.jpg" alt="">
+                                    <img class="lazy" data-original="../images/02.jpg" alt="">
                                     <h5>维达手帕纸超韧4层8张18包卫生纸巾 自然无香面巾纸 新旧交替发货</h5>
                                     <p>￥329</p>
                                 </div>
@@ -552,7 +878,7 @@
                         <li class="no-right">
                             <a href="">
                                 <div>
-                                    <img src="../images/02.jpg" alt="">
+                                    <img class="lazy" data-original="../images/02.jpg" alt="">
                                     <h5>维达手帕纸超韧4层8张18包卫生纸巾 自然无香面巾纸 新旧交替发货</h5>
                                     <p>￥329</p>
                                 </div>
@@ -565,7 +891,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/11.jpg" alt="">
+                                    <img class="lazy" data-original="../images/11.jpg" alt="">
                                     <h5>Converse匡威女鞋帆布鞋经典款高帮男学生中性运动休闲板鞋101010</h5>
                                     <p>￥299</p>
                                 </div>
@@ -574,7 +900,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/11.jpg" alt="">
+                                    <img class="lazy" data-original="../images/11.jpg" alt="">
                                     <h5>Converse匡威女鞋帆布鞋经典款高帮男学生中性运动休闲板鞋101010</h5>
                                     <p>￥299</p>
                                 </div>
@@ -583,7 +909,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/11.jpg" alt="">
+                                    <img class="lazy" data-original="../images/11.jpg" alt="">
                                     <h5>Converse匡威女鞋帆布鞋经典款高帮男学生中性运动休闲板鞋101010</h5>
                                     <p>￥299</p>
                                 </div>
@@ -592,7 +918,7 @@
                         <li>
                             <a href="">
                                 <div>
-                                    <img src="../images/11.jpg" alt="">
+                                    <img class="lazy" data-original="../images/11.jpg" alt="">
                                     <h5>Converse匡威女鞋帆布鞋经典款高帮男学生中性运动休闲板鞋101010</h5>
                                     <p>￥299</p>
                                 </div>
@@ -601,7 +927,7 @@
                         <li class="no-right">
                             <a href="">
                                 <div>
-                                    <img src="../images/11.jpg" alt="">
+                                    <img class="lazy" data-original="../images/11.jpg" alt="">
                                     <h5>Converse匡威女鞋帆布鞋经典款高帮男学生中性运动休闲板鞋101010</h5>
                                     <p>￥299</p>
                                 </div>

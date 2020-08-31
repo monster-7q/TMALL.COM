@@ -8,5 +8,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monster-7q/TMALL.COM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/monster-7q/TMALL.COM/issues"
+  },
+  "homepage": "https://github.com/monster-7q/TMALL.COM#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "requirejs": "^2.3.6"
+  }
 }
