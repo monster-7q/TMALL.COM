@@ -650,7 +650,7 @@ body {
 }
 #main #content-article > #conten-interest {
   margin-top: 30px;
-  width: 100%;
+  width: 1240px;
 }
 #main #content-article > #conten-interest > h2 {
   color: #666;
@@ -682,9 +682,10 @@ body {
   right: -38px;
 }
 #main #content-article > #conten-interest > div > ul {
-  height: 333px;
+  overflow: hidden;
 }
 #main #content-article > #conten-interest > div > ul > li {
+  margin-top: 10px;
   float: left;
   width: 236px;
   margin-right: 12px;
@@ -733,9 +734,6 @@ body {
 }
 #main #content-article > #conten-interest > div > ul > li > a > div:hover img {
   opacity: 0.6;
-}
-#main #content-article > #conten-interest > div > ul > .no-right {
-  margin-right: 0px;
 }
 #main #content-article > #conten-interest > .conten-interest-end {
   width: 80px;

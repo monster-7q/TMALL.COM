@@ -104,6 +104,13 @@
       "unicode_decimal": 59012
     },
     {
+      "icon_id": "3217829",
+      "name": "放大镜",
+      "font_class": "icon-",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
       "icon_id": "5187409",
       "name": "沙发",
       "font_class": "shafa",
@@ -127,7 +134,7 @@
     {
       "icon_id": "5212177",
       "name": "裙子",
-      "font_class": "icon-",
+      "font_class": "icon-1",
       "unicode": "e604",
       "unicode_decimal": 58884
     },
