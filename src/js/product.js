@@ -101,9 +101,9 @@ import { cookie } from './lib/cookie.js';
             </dl>
             <!-- 购买 -->
             <div class="loupe-right-buy">
-                <!-- <div>
-                    <a href="javascript:;">立即购买</a>
-                </div> -->
+                <div>
+                    <a href="./shopcar.html">立即购买</a>
+                </div>
                 <div>
                     <a href="javascript:;" id="additem">加入购物车</a>
                 </div>

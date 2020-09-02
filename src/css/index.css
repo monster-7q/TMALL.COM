@@ -220,18 +220,19 @@ body {
   color: red;
 }
 #main #content-nav > nav > #content-list > ol {
-  height: 500px;
-  width: 852px;
   left: 200px;
   position: absolute;
-  display: none;
   top: 39px;
-  background-color: #fff;
   color: #000;
+  z-index: 3;
 }
 #main #content-nav > nav > #content-list > ol > li {
+  height: 500px;
+  width: 852px;
+  background-color: #fff;
   padding: 20px;
   display: none;
+  z-index: 2;
 }
 #main #content-nav > nav > #content-list > ol > li > a {
   color: aqua;
@@ -250,17 +251,45 @@ body {
 }
 #main #content-banner > main > ul {
   height: 500px;
-  width: 1230px;
+  width: 1130px;
   margin: 0 auto;
+  position: relative;
 }
 #main #content-banner > main > ul > li {
-  display: none;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
 }
 #main #content-banner > main > ul > li > img {
   float: left;
 }
 #main #content-banner > main > ul > .active {
+  opacity: 1;
+}
+#main #content-banner > main > ol {
+  height: 20px;
+  width: 100%;
   display: block;
+  position: relative;
+  margin: -40px auto 0;
+  text-align: center;
+  z-index: 1;
+}
+#main #content-banner > main > ol > li {
+  background: #000;
+  width: 25px;
+  height: 5px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 5px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+#main #content-banner > main > ol > .selected {
+  background: #fff;
+  opacity: 0.6;
 }
 #main #content-article {
   width: 1230px;
@@ -493,9 +522,51 @@ body {
   font-size: 18px;
   line-height: 20px;
 }
-#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > ul > .active {
+#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > ul > .tab-active {
   color: #fff;
   background: #00B262;
+}
+#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > a {
+  height: 225px;
+  width: 462px;
+  display: none;
+  position: relative;
+}
+#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > a > div {
+  font-size: 20px;
+  color: #000;
+  position: absolute;
+  top: 86px;
+  height: 87px;
+  width: 291px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(https://img.alicdn.com/tfs/TB1AnTXewMPMeJjy1XcXXXpppXa-290-87.png);
+  z-index: 99;
+  padding: 10px 0 0 30px;
+}
+#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > a > div > p {
+  margin-left: 34px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #00B262;
+}
+#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > a > div > img {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+}
+#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > a > img {
+  float: right;
+  margin-top: 10px;
+  margin-right: 30px;
+  width: 200px;
+  height: 200px;
+}
+#main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > div > div > .tab-a {
+  display: block;
 }
 #main #content-article > #content-supermarket > .supermarket-bottom > .supermarket-bottom-right > a {
   width: 235px;
@@ -854,4 +925,77 @@ body {
   margin-top: 10px;
   margin-right: 10px;
   height: 30px;
+}
+#main #loutinav {
+  width: 35px;
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+}
+#main #loutinav > ul > div {
+  background-color: #ff0036;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1px;
+  overflow: hidden;
+  font-size: 12px;
+}
+#main #loutinav > ul > li {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1px;
+  background-color: #666;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  font-size: 12px;
+}
+#main #loutinav > ul > li > a {
+  color: #fff;
+  display: block;
+  line-height: 12px;
+  width: 24px;
+  height: 28px;
+  margin: 6px auto;
+}
+#main #loutinav > ul > li:hover {
+  background-color: lightgrey;
+}
+#main #loutinav > ul > #top1 {
+  background-color: #5e68fc;
+}
+#main #top {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.9);
+  position: fixed;
+  top: -50px;
+  z-index: 999;
+}
+#main #top > div {
+  width: 740px;
+  height: 40px;
+  margin: 7.5px auto;
+}
+#main #top > div > input {
+  width: 640px;
+  height: 30px;
+  outline: none;
+}
+#main #top > div > button {
+  height: 30px;
+  width: 80px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
 }

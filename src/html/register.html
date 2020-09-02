@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册-理想生活上天猫</title>
     <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/register.js" type="module"></script>
+    <script src="../js/register-updada.js" type="module"></script>
 </head>
 
 <body>
@@ -15,49 +17,49 @@
                 天猫账号注册
             </div>
         </header>
-        <form action="">
+        <form action="#" method="GET" id="myform">
             <p>
-                <label for=""><b>*</b>设置用户名：</label>
-                <input type="text" class="email" placeholder="设置你的用户名">
-                <span></span>
+                <label for="username"><b>*</b>设置用户名：</label>
+                <input type="text" id="username" placeholder="设置你的用户名">
+                <span class="username"></span>
             </p>
             <p>
-                <label for=""><b>*</b> 邮箱：</label>
-                <input type="text" class="email" placeholder="输入你的邮箱">
-                <span></span>
-            </p>
-            <p>
-                <label for=""><b>*</b> 设置密码：</label>
-                <input type="password" class="password" placeholder="设置你的登录密码">
-                <span></span>
+                <label for="password"><b>*</b> 设置密码：</label>
+                <input type="text" id="password" placeholder="设置你的登录密码">
+                <span class="password"></span>
                 <!-- <em class="safety">
                     <i>安全程度：</i>
                     <span></span>
                 </em> -->
             </p>
             <p>
-                <label for=""><b>*</b> 确认密码：</label>
-                <input type="password" class="password1" placeholder="确认你的登录密码">
-                <span></span>
+                <label for="checkpass"><b>*</b> 确认密码：</label>
+                <input type="text" id="checkpass" placeholder="确认你的登录密码">
+                <span class="checkpass"></span>
             </p>
             <p>
-                <label for=""><b>*</b> 手机号码：</label>
-                <input type="text" class="phone" placeholder="输入你的手机号码">
-                <span></span>
+                <label for="email"><b>*</b> 邮箱：</label>
+                <input type="text" id="email" placeholder="输入你的邮箱">
+                <span class="email"></span>
             </p>
             <p>
+                <label for="phone"><b>*</b> 手机号码：</label>
+                <input type="text" id="phone" placeholder="输入你的手机号码">
+                <span class="phone"></span>
+            </p>
+            <!-- <p>
                 <label for=""><b>*</b> 图形验证码：</label>
                 <input type="text" class="code">
-                <span></span>
-                <!-- <em class="yzm">
+                <span></span> -->
+            <!-- <em class="yzm">
                     <span>0000</span>
                     <i>看不清？</i>
                     <a href="" id="yzm-random">换一张</a>
                 </em> -->
-            </p>
+            <!-- </p> -->
             <p>
                 <label for=""></label>
-                <button type="submit">同意协议并注册</button>
+                <button id="btn">同意协议并注册</button>
             </p>
         </form>
     </div>
