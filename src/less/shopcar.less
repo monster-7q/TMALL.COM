@@ -9,7 +9,7 @@ li{
 a{
     text-decoration: none;
 }
-i{
+i,em{
     font-style:normal;
 }
 #head-login{
@@ -283,6 +283,78 @@ i{
         }
     }
 }
+// 结算
+#cart-shopcar{
+    width: 990px;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #e5e5e5;
+    font-size: 12px;
+    >div{
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        overflow: hidden;
+    }
+    >.cart-shopcar-left{
+        width: 50px;
+        margin: 0 22px;
+        cursor: pointer;
+        >input{
+            position: relative;
+            top: 2px;
+            display: inline-block;
+        }
+    }
+    >.cart-shopcar-center{
+
+        >a{
+            margin-left: 25px;
+            color: #3c3c3c;
+        }
+    }
+    >.cart-shopcar-right{
+        float: right;
+        >div{
+            float: left;
+            overflow: hidden;
+        }
+        >div:nth-child(1){
+            margin-right: 30px;
+        }
+        >div:nth-child(2){
+            margin-right: 10px;
+            // margin-right: 30px;
+            >span{
+                text-align: center;
+                color: #f40;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 48px;
+                font-family: Arial;
+                vertical-align: middle;
+            }
+        }
+        >div:nth-child(3){
+            width: 120px;
+            background: #B0B0B0;
+            border-left: 1px solid #e7e7e7;
+            width: 119px;
+            cursor: not-allowed;
+            text-align: center;
+            >a{
+                line-height: 50px;
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+
 // 底部
 #footer{
     margin-top:20px;

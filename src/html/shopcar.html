@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMALL购物车</title>
+    <title>购物车-理想生活上天猫</title>
     <link rel="stylesheet" href="../css/shopcar.css">
     <link rel="stylesheet" href="../font/iconfont.css">
     <script src="../js/shopcar.js" type="module"></script>
@@ -16,8 +16,8 @@
         <header>
             <p>
                 <i>喵，欢迎来到天猫</i>
-                <a href="javascript:;">请登录</a>
-                <a href="javascript:;">免费注册</a>
+                <a href="./login.html">请登录</a>
+                <a href="./register.html">免费注册</a>
             </p>
             <ul>
                 <li>
@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;"><span class="iconfont icon-gouwucheman"></span>购物车</a>
+                    <a href="./shopcar.html"><span class="iconfont icon-gouwucheman"></span>购物车</a>
                 </li>
                 <li>
                     <a href="javascript:;">收藏夹<span class="iconfont icon-xiajiantoushixinxiao"></span></a>
@@ -107,7 +107,8 @@
                     </div>
                 </li>
                 <li>
-                    ￥1894.00
+                    ￥
+                    <i>1894.00</i>
                     <p>(0.238kg)</p>
                 </li>
                 <li><a href="javascript:;">删除</a></li>
@@ -143,6 +144,34 @@
             </ul> -->
         </div>
     </div>
+    <!-- 结算 -->
+    <div id="cart-shopcar">
+        <!-- 左 -->
+        <div class="cart-shopcar-left">
+            <input type="checkbox" id="allselect"> 全选
+        </div>
+        <!-- 中 -->
+        <div class="cart-shopcar-center">
+            <a href="javascript:;">删除选中商品</a>
+        </div>
+        <!-- 右 -->
+        <div class="cart-shopcar-right">
+            <div>
+                已选择<em>0</em>件商品
+            </div>
+            <div>
+                合计(不含运费):
+                <span class="totalprice">￥0.00</span>
+            </div>
+            <div>
+                <a href="">
+                    结算
+                </a>
+            </div>
+        </div>
+    </div>
+
+
     <!-- 底部 -->
     <div id="footer">
         <div class="footer-center">

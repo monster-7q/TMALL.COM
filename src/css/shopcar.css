@@ -9,7 +9,8 @@ li {
 a {
   text-decoration: none;
 }
-i {
+i,
+em {
   font-style: normal;
 }
 #head-login {
@@ -279,6 +280,69 @@ i {
 }
 #shopcar-main > #shopcar-list > ul > li:nth-child(6) {
   padding-left: 10px;
+}
+#cart-shopcar {
+  width: 990px;
+  height: 50px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #e5e5e5;
+  font-size: 12px;
+}
+#cart-shopcar > div {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+#cart-shopcar > .cart-shopcar-left {
+  width: 50px;
+  margin: 0 22px;
+  cursor: pointer;
+}
+#cart-shopcar > .cart-shopcar-left > input {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+}
+#cart-shopcar > .cart-shopcar-center > a {
+  margin-left: 25px;
+  color: #3c3c3c;
+}
+#cart-shopcar > .cart-shopcar-right {
+  float: right;
+}
+#cart-shopcar > .cart-shopcar-right > div {
+  float: left;
+  overflow: hidden;
+}
+#cart-shopcar > .cart-shopcar-right > div:nth-child(1) {
+  margin-right: 30px;
+}
+#cart-shopcar > .cart-shopcar-right > div:nth-child(2) {
+  margin-right: 10px;
+}
+#cart-shopcar > .cart-shopcar-right > div:nth-child(2) > span {
+  text-align: center;
+  color: #f40;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+  font-family: Arial;
+  vertical-align: middle;
+}
+#cart-shopcar > .cart-shopcar-right > div:nth-child(3) {
+  width: 120px;
+  background: #B0B0B0;
+  border-left: 1px solid #e7e7e7;
+  width: 119px;
+  cursor: not-allowed;
+  text-align: center;
+}
+#cart-shopcar > .cart-shopcar-right > div:nth-child(3) > a {
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
 }
 #footer {
   margin-top: 20px;

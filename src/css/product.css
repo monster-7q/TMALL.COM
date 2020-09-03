@@ -446,6 +446,9 @@ i {
   line-height: 12px;
   color: #878787;
 }
+#main #product > .product-main > .product-main-left > #loupe-right > .loupe-right-number > dd > span > span:first-of-type > i:hover {
+  border: 1px solid red;
+}
 #main #product > .product-main > .product-main-left > #loupe-right > .loupe-right-number > dd > span > span:last-of-type {
   vertical-align: middle;
   margin-left: 5px;

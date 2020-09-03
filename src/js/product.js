@@ -91,8 +91,8 @@ import { cookie } from './lib/cookie.js';
                     <span>
                         <input type="text" value="1" id="loupe-num">
                         <span>
-                            <i>+</i>
-                            <i>-</i>
+                            <i id="btni-top">+</i>
+                            <i id="btni-bottom">-</i>
                         </span>
                     <span>件</span>
                     </span>
@@ -109,10 +109,18 @@ import { cookie } from './lib/cookie.js';
                 </div>
             </div>
             `;
-
             $('#loupe-left').append(loupe_left);
             $('#loupe-right').append(loupe_right).find('#additem').on('click', function() {
+                alert('加入成功');
                 addItem(res.id, $("#loupe-num").val());
+            })
+            $('#btni-top').on('click', function() {
+                $("#loupe-num").val(+($("#loupe-num").val()) + 1);
+            })
+            $('#btni-bottom').on('click', function() {
+                if ($("#loupe-num").val() > 0) {
+                    $("#loupe-num").val(+($("#loupe-num").val()) - 1);
+                }
             })
         }
     });
